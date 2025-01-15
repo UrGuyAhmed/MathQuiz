@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray; 
+    font-family: Bahnschrift;
+}
+#ans1, #ans2, #ans3, #options, .Questions {
+    display: none;
+}
+#play {
+    display: inline-block;
+}
+.Questions {
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-size: 30px;
+    color: black;
+}
+button {
+    margin: 0px;
+    width: 100px; 
+    height: 50px;
+    background-color: rgba(0, 128, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    font-family: Bahnschrift;
+    border: none ;
+    transition: all 0.3s ease; 
+    flex-direction: column;
+}
+button:hover {
+    background-color: purple; 
+    transform: scale(1.2);
+}
+#ans2 {
+    margin-left: 10px;
+}
+#ans3 {
+    margin-left: 10px;
+}
+#options {
+    
+    display:none;
+}
+#feedback{
+    cursor: pointer;
+    width: auto; 
+    height: auto;
+    background-color: rgba(0, 128, 0, 0.9);
+    border-radius: 10px; 
+    padding:7px;
+    transition: all 0.3s ease; 
+
+}
+#feedback:hover{
+    
+    background-color: purple;
+    transform: scale(1.1);
+    transition: all 50ms ease;
+    padding:10px;
+    width: auto; 
+    height: auto;
+    
+}
+#score {
+    top: 10px;  
+    right: 10px;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    font-family: Bahnschrift;
+    flex-direction: column;   
+    transition: all 0.3s ease; 
+    
+}
+#score:hover{
+    background-color: purple; 
+    transform: scale(1.2);
+}
+#timer {
+    top: 70px;  
+    right: 10px;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    font-family: Bahnschrift;
+    flex-direction: column;   
+    transition: all 0.3s ease; 
+    
+}
+#timer:hover{
+    background-color: purple; 
+    transform: scale(1.2);
+}
+#stats {
+    display: none;  /* Initially hidden */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the stats container */
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.9);  /* Green background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    color: white;  /* White text */
+    font-family: Bahnschrift, sans-serif;
+}
+#stats h2 {
+    margin: 0;
+    font-size: 30px;
+}
+#stats p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+#stop{
+    top: 130px;  
+    right: 10px;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.9); 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 20px;
+    font-family: Bahnschrift;
+    flex-direction: column;   
+    transition: all 0.3s ease; 
+}
+#stop:hover{
+    background-color: purple; 
+    transform: scale(1.2);
+    cursor: normal;
+}
+#restart {
+    display: none; /* Makes it a block element */
+    margin-top: 240px; /* Adds space between the Game Over box and the Restart button */
+    background-color: rgba(0, 128, 0, 0.9);  /* Green background to match the buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Bahnschrift, sans-serif;
+    font-size: 20px;
+    width: auto; /* Ensures button width is based on its content */
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto; /* Centers the button horizontally */
+}
+
+#restart:hover {
+    background-color: purple; /* Darker color on hover */
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
